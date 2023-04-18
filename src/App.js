@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./components/Home";
-import Login from "./components/Login";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import HandleRedirect from "./pages/HandleRedirect";
 
 const router = createBrowserRouter([
   {
@@ -8,6 +9,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   { path: "/login", element: <Login /> },
+  { path: "/oauth", element: <HandleRedirect /> },
 ]);
 
 function App() {
